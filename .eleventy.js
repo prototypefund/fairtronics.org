@@ -3,4 +3,11 @@ module.exports = function(eleventyConfig) {
     // to the output directory
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
+
+    return {
+        dir: {
+          input: "src",
+          output: "public"
+        }
+      };
 };
