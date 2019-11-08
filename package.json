@@ -1,0 +1,24 @@
+{
+  "name": "fairtronics.org",
+  "version": "1.0.0",
+  "description": "Source files for generating the [fairtronics.org](https://fairtronics.org) website.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve src",
+    "build": "npx eleventy src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/fairloetet/fairtronics.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fairloetet/fairtronics.org/issues"
+  },
+  "homepage": "https://gitlab.com/fairloetet/fairtronics.org#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
+}
