@@ -56,20 +56,7 @@ main {
     color: #26a69a;
 }
 
-.welcome .name-section {
-    padding-top: 6rem;
-    padding-bottom: 6rem
-}
 
-.welcome .topic-section {
-    padding-top: 0;
-    padding-bottom: 6rem
-}
-
-.topics-description {
-    padding-left: 1rem;
-    padding-right: 1rem
-}
 
 .description {
     padding-top: 4rem;
@@ -90,31 +77,6 @@ main {
 
 .description .description-text {
     padding-right: 3rem
-}
-
-.bio {
-    margin-top: 2rem;
-    overflow: auto
-}
-
-.bio .bio-img {
-    width: 25%
-}
-
-.bio .bio-text {
-    width: 75%;
-    padding-left: 2rem
-}
-
-.bio .bio-text h4 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    font-weight: 600
-}
-
-.bio .contact-text {
-    color: rgba(255, 255, 255, 0.9);
-    margin-left: 0.5rem
 }
 
 footer {
