@@ -1,0 +1,20 @@
+---
+layout: layout.liquid
+---
+<main class="teal lighten-2">
+<div class="container">
+  <div class="heading row">
+	<div class="col s12 m6 l6">
+	  <h2 class="">{{ pageTitle }}</h2>
+	</div>
+	<div class="col s12 m6 l6">
+	  <p class="heading-subtext">{{ pageSubtext }}</p>
+	</div>
+  </div>
+  <div class="content white z-depth-1">
+	<div class="section">
+	  {{ content | safe }}
+	</div>
+  </div>
+</div>
+</main>

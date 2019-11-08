@@ -19,14 +19,11 @@ root: ""
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">[Fairtronics]</a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right">
+        <li><a href="{{ '/news' | url }}">News</a></li>
         <li><a href="https://gitlab.com/fairloetet/">Gitlab</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   </header>
@@ -37,14 +34,8 @@ root: ""
   </main>
   <footer class="page-footer blue-grey lighten-5">
         <div class="container center">
-            <p class="blue-grey-text text-lighten-3"><a href="{{ '/impressum' | url }}">Impressum</a> - <a href="{{ '/datenschutz' | url }}">Datenschutz</a></p>
+            <p class="blue-grey-text text-lighten-3"><a href="{{ '/imprint' | url }}">Imprint</a> - <a href="{{ '/privacy' | url }}">Privacy</a></p>
         </div>
     </footer>
-  <script src="{{ 'js/materialize.js' | prepend: root | url }}"></script>
-  <script type="text/javascript">
-  
-  M.AutoInit();
-  </script>
-
   </body>
 </html>
