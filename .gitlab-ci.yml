@@ -2,7 +2,7 @@ image: mikebell/eleventy:0.9.0
 
 pages:
   script:
-  - eleventy --pathprefix=/fairtronics.org
+  - eleventy
   artifacts:
     paths:
     - public
