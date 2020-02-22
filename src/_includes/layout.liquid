@@ -9,33 +9,54 @@ root: ""
   <title>{{ title }}</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <link href="{{ '/css/materialize.css' | prepend: root | url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="{{ '/css/style.css' | prepend: root | url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ '/css/styles.css' | prepend: root | url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
-  <header class="navbar-fixed">
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">[Fairtronics]</a>
-      <ul class="right">
-        <li><a href="{{ '/news' | url }}">News</a></li>
-        <li><a href="https://gitlab.com/fairloetet/">Gitlab</a></li>
-      </ul>
+<body class="has-navbar-fixed-top">
+  <nav class="navbar level is-fixed-top has-background-primary" role="navigation" aria-label="main navigation">
 
+    <div class="level-item">
     </div>
+    <p class="level-item has-text-centered">
+      <a href="{{ '/' | url }}" class="">
+      <img  src="{{ '/assets/fairtronics-logo-white.png' | url }}"" alt="Fairtronics" style="height: 60px"/>
+      </a>
+    <p>
+
+    <div class="level-item">
+      <p class="navbar-item">
+      <a href="{{ '/news' | url }}">News</a>
+      </p>
+      <p class="navbar-item">
+      <a href="https://gitlab.com/fairloetet/">Gitlab</a>
+      </p>
+    </div>
+    </div>
+
   </nav>
-  </header>
-  <main class="page-content teal lighten-2" aria-label="Content">
-    <div class="wrapper">
-    {{ content }}
+  {{ content }}
+  <footer class="footer has-background-white">
+    <div class="level container is-fluid">
+      <div class="level-left level">
+      <div class="level-item" >
+          <img src="{{ '/assets/BMBF-Logo.jpg' | url }}"
+          alt="Bundesministerium für Bildung und Forschung" style="height: 128px">
+      </div>
+      <div class="level-item" >
+          <img src="{{ '/assets/PrototypeFund-P-Logo.png' | url }}"
+          alt="Prototype Fund" style="height: 128px">
+      </div>
+      <div class="level-item" style="" >
+          <p><span style="line-height: 2.5em">Ein Projekt von</span><br/>
+          <a href="https://fairloetet.de/"><img src="{{
+          '/assets/FairLoetet-Logo.png' | url }}" alt="FairLötet"
+          style="height: 114px"></a></p>
+      </div>
+      </div>
+      <div class="level-right level">
+      <p class="level-item"><a href="{{ '/imprint' | url }}">Imprint</a></p>
+      <p class="level-item"><a href="{{ '/privacy' | url }}">Privacy</a></p>
+      </div>
     </div>
-  </main>
-  <footer class="page-footer blue-grey lighten-5">
-        <div class="container center">
-            <p class="blue-grey-text text-lighten-3"><a href="{{ '/imprint' | url }}">Imprint</a> - <a href="{{ '/privacy' | url }}">Privacy</a></p>
-        </div>
-    </footer>
+  </footer>
   </body>
 </html>

@@ -1,137 +1,107 @@
 ---
 layout: layout.liquid
-title: Welcome to [Fairtronics]
+title: Welcome to Fairtronics
 subtitle: An easy-to-use tool for social risk analysis in electronics products
 ---
-<div class="container welcome center">
-    <div class="section name-section">
-        <h1 class="center">{{ title }}</h1>
-        <h4 class="center">{{ subtitle }}</h4>
+<div class="section hero is-fullheight has-background-white">
+<div class="hero-body">
+<div class="container has-text-centered">
+    <div class="section">
+        <h1 class="title is-1">{{ title }}</h1>
+        <p class="subtitle">{{ subtitle }}</p>
     </div>
-    <div class="section topic-section">
-        <div class="row">
-            <div class="col s12 offset-m2 m8 l4">
-                <a class="topics"><i class="large material-icons" aria-hidden="true">supervisor_account</i></a>
-                <h4 class="center">The Challenge</h4>
-                <p class="topics-description">Human rights are violated at all stages of the electronics supply chain.
-                </p>
-            </div>
-            <div class="col s12 m6 l4">
-                <a class="topics"><i class="large material-icons" aria-hidden="true">assessment</i></a>
-                <h4 class="center">The Approach</h4>
-                <p class="topics-description">[Fairtronics] is a web-based social life cycle tool for electronics
-                    products.</p>
-            </div>
-            <div class="col s12 m6 l4">
-                <a class="topics"><i class="large material-icons" aria-hidden="true">search</i></a>
-                <h4 class="center">The Vision</h4>
-                <p class="topics-description">Electronics manufacturers can use the tool to 
-                    examine improvement measures.</p>
-            </div>
+    <div class="section columns">
+        <div class="column">
+            <img src="{{ '/assets/icon-thechallenge.png' | url }}" alt="thechallenge" style="height: 200px;"/>
+            <h3 class="title is-3">The Challenge</h3>
+            <p class="is-size-5">Human rights are violated at all stages of the electronics supply chain.
+            </p>
+        </div>
+        <div class="column">
+            <img src="{{ '/assets/icon-theapproach.png' | url }}" alt="theapproach" style="height: 200px;"/>
+            <h3 class="title is-3">The Approach</h3>
+            <p class="is-size-5">Fairtronics is a web-based social life cycle tool for electronics
+                products.</p>
+        </div>
+        <div class="column">
+            <img src="{{ '/assets/icon-thevision.png' | url }}" alt="thevision" style="height: 200px;"/>
+            <h3 class="title is-3">The Vision</h3>
+            <p class="is-size-5">Electronics manufacturers can use the tool to 
+                examine improvement measures.</p>
         </div>
     </div>
 </div>
+</div>
+</div>
 
-<div class="description blue-grey darken-2">
+<div class="section hero is-info is-fullheight has-text-centered">
+    <div class="hero-body">
     <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h3>Involved with hardware projects? Fairtronics needs your help!</h3>
-                <p>
-                    If you work on hardware and are interested in using Fairtronics for your projects, please help us out by sending
-                    us any source files you use to define your materials, e.g. Eagle / KiCad / Gerber files or Bill of Materials lists!
-                    Contact us at <a href="mailto@info@fairtronics.org">info@fairtronics.org</a>.
-                </p>
-            </div>
-        </div>
+        <h2 class="title is-2">Involved with hardware projects?<br/>Fairtronics needs your help!</h2>
+        <p class="is-size-3">
+            If you work on hardware and are interested in using Fairtronics for your projects, please help us out by sending
+            us any source files you use to define your materials, e.g. Eagle / KiCad / Gerber files or Bill of Materials lists!
+        </p>
+        <p>
+        <a class="button is-primary is-large"href="mailto@info@fairtronics.org">Contact us</a>
+        </p>
+    </div>
     </div>
 </div>
 
-<div class="description blue-grey darken-3">
+<div class="section hero has-background-light has-text-centered">
+    <div class="hero-body">
     <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h3>How Does Fairtronics Work?</h3>
-                <p>
-                    <a href="https://media.ccc.de/v/36c3-10592-fairtronics">Watch this presentation</a> to learn more about how Fairtronics works and how it is developed.
-                    The talk was recorded at the 36th Chaos Communication Congress in December 2019.
-                </p>
-                <br />
-                <div style="width:100%; text-align:center">
-                    <iframe width="1024" height="576" src="https://media.ccc.de/v/36c3-10592-fairtronics/oembed" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+        <h2 class="title is-2">How Does Fairtronics Work?</h2>
+        <p class="is-size-3">
+            <a href="https://media.ccc.de/v/36c3-10592-fairtronics">Watch this presentation</a> to learn more about how Fairtronics works and how it is developed.
+            The talk was recorded at the 36th Chaos Communication Congress in December 2019.
+        </p>
+        <br />
+        <div style="width:100%; text-align:center">
+            <iframe width="1024" height="576" src="https://media.ccc.de/v/36c3-10592-fairtronics/oembed" frameborder="0" allowfullscreen></iframe>
         </div>
+    </div>
     </div>
 </div>
 
-<div class="description blue-grey darken-2">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="section description-text">
-                    <h3>The Challenge</h3>
-                    <p>
-                        Human rights are violated at all stages of the electronics supply chain.
-                        Through their work with <a href="https://fairloetet.de">FairLötet e.V.</a>, the project team has found that smaller electronics
-                        manufacturers in particular are sensitised to these challenges, but lack concrete options for
-                        action.
-                        At the same time, there is usually no budget for classical methods of sustainability management
-                        such as lifecycle assessments. The project is intended to provide an introduction
-                        to sustainability analysis. In this way, manufacturers can identify the riskiest components
-                        of their products and develop targeted alternatives for action.
-                    </p>
-                </div>
-                <div class="divider"></div>
+<div class="section hero has-text-centered">
+    <div class="hero-body"> 
+        <div class="container">
+            <div class="section">
+                <h2 class="title is-2">The Challenge</h2>
+                <p class="is-size-3">
+                    Human rights are violated at all stages of the electronics supply chain.
+                    Through their work with <a href="https://fairloetet.de">FairLötet e.V.</a>, the project team has found that smaller electronics
+                    manufacturers in particular are sensitised to these challenges, but lack concrete options for
+                    action.
+                    At the same time, there is usually no budget for classical methods of sustainability management
+                    such as lifecycle assessments. The project is intended to provide an introduction
+                    to sustainability analysis. In this way, manufacturers can identify the riskiest components
+                    of their products and develop targeted alternatives for action.
+                </p>
             </div>
-            <div class="col s12">
-                <div class="section description-text">
-                    <h3>The Approach</h3>
-                    <p>
-                    On an internet portal, interested parties should be able to have the fairness of electronic products analysed.
-                    A parts list can be entered for analysis.
-                    A Social Lifecycle Assessment (S-LCA) uses open data to calculate social risks such as human rights or labour law violations.
-                    A graphical interface prepares the social analysis for laypersons in an understandable way and provides a classification of the calculated risks.
-                    In addition, components are highlighted which contribute particularly high risk.
-                    This should sensitise users to social risks and encourage them to think about design alternatives.
-                    </p>
-                </div>
-                <div class="divider"></div>
+            <div class="section">
+                <h2 class="title is-2">The Approach</h2>
+                <p class="is-size-3">
+                On an internet portal, interested parties should be able to have the fairness of electronic products analysed.
+                A parts list can be entered for analysis.
+                A Social Lifecycle Assessment (S-LCA) uses open data to calculate social risks such as human rights or labour law violations.
+                A graphical interface prepares the social analysis for laypersons in an understandable way and provides a classification of the calculated risks.
+                In addition, components are highlighted which contribute particularly high risk.
+                This should sensitise users to social risks and encourage them to think about design alternatives.
+                </p>
             </div>
-            <div class="col s12">
-                <div class="section description-text">
-                    <h3>The Vision</h3>
-                <p>
+            <div class="section">
+                <h2 class="title is-2">The Vision</h2>
+                <p class="is-size-3">
                 Electronics manufacturers, especially smaller companies and start-ups, can use the tool to identify particularly risky components and examine possible measures (e.g. alternative sourcing, design alternatives).
                 The tool can also be used for educational purposes within the framework of FairLötet's association work and beyond, e.g. in a university context or at events related to electronics or sustainability.
                 </p>
 
-                </div>
             </div>
 
         </div>
     </div>
-</div>
-<div class="description white">
-    <div class="container">
-        <div class="row">
-            <div class="col s3" >
-                <img src="{{ '/assets/BMBF-Logo.jpg' | url }}"
-                alt="Bundesministerium für Bildung und Forschung" style="width: 200px">
-            </div>
-            <div class="col s3" >
-                <img src="{{ '/assets/PrototypeFund-P-Logo.png' | url }}"
-                alt="Prototype Fund">
-            </div>
-            <div class="col s3" style="text-align: center; line-height: 2.0" >
-                <span style="color: black">Ein Projekt von</span><br/>
-                <a href="https://fairloetet.de/"><img src="{{
-                '/assets/FairLoetet-Logo.png' | url }}" alt="FairLötet"
-                style="width: 125px"></a>
-            </div>
-        </div>
-
-    </div>
-
 </div>
 </div>

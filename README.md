@@ -10,4 +10,6 @@ Source files for generating the [fairtronics.org](https://fairtronics.org) websi
 
 `npm run start` will start a development server
 
+`npm run css-watch` will build css when sass files are changed
+
 `npm run build` will build the static site from the files in `src`. Output is placed in `public`.
