@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-.navbar img {
-  height: 60px;
-  padding: 12px; }
+.navbar a {
+  color: white; }
 
 .footer .container.level .level-item {
   margin-left: 48px;
   margin-right: 48px; }
+
+.has-board-background {
+  background-image: url("../assets/schalplan-illu-rechts.png"), url("../assets/schalplan-illu-links.png");
+  background-position: right bottom, top left;
+  background-repeat: no-repeat, no-repeat; }
 
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

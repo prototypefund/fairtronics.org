@@ -12,26 +12,33 @@ root: ""
   <link href="{{ '/css/styles.css' | prepend: root | url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="has-navbar-fixed-top">
-  <nav class="navbar level is-fixed-top has-background-primary" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top has-background-primary" role="navigation" aria-label="main navigation">
+  <div class="container is-fluid">
 
-    <div class="level-item">
-    </div>
-    <p class="level-item has-text-centered">
-      <a href="{{ '/' | url }}" class="">
-      <img  src="{{ '/assets/fairtronics-logo-white.png' | url }}"" alt="Fairtronics" style="height: 60px"/>
+    <div class="navbar-brand">
+      <a href="{{ '/' | url }}" class="navbar-item">
+      <img  src="{{ '/assets/logoicon-light.png' | url }}"" alt="Fairtronics" height="28"/>
       </a>
-    <p>
-
-    <div class="level-item">
-      <p class="navbar-item">
-      <a href="{{ '/news' | url }}">News</a>
-      </p>
-      <p class="navbar-item">
-      <a href="https://gitlab.com/fairloetet/">Gitlab</a>
-      </p>
-    </div>
     </div>
 
+    <div class="navbar-menu">
+      <div class="navbar-start">
+      <a class="navbar-item" href="{{ '/browse' | url }}">Browse Reports</a>
+      <a class="navbar-item" href="http://localhost:8080/product/create">Create Report</a>
+      <a class="navbar-item" href="{{ '/how-it-works' | url }}">How it Works</a>
+      <a class="navbar-item" href="{{ '/news' | url }}">News</a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-dark" href="http://app.fairtronics.org">Demo App</a>
+          <a class="button is-light" href="https://gitlab.com/fairloetet/">Gitlab</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
   </nav>
   {{ content }}
   <footer class="footer has-background-white">
