@@ -1,7 +1,12 @@
 ---
-layout: page.liquid
+layout: page-with-outline.liquid
 pageTitle: How it works
 pageSubtext: Explanation of our concepts and methods
+outline: 
+    - {url: '#basic-concepts', title: 'Basic Concepts'}
+    - {url: '#calculation', title: 'Calculation'}
+    - {url: '#impact-categories', title: 'Impact Categories'}
+    - {url: '#future-developments', title: 'Future Developments'}
 ---
 <p>
 By analyzing the raw materials contained within a device, we pinpoint the global hotspots where human rights violations are most likely to occur.
@@ -10,7 +15,7 @@ or exploration of design alternatives.
 In the following, we describe the basic concepts, assumptions, calculations and limitations behind Fairtronics.
 </p>
 
-<h2>Basic Concepts</h2>
+<h2 id="basic-concepts">Basic Concepts</h2>
 
 <h3>Electronics Products consist of Components</h3>
 
@@ -29,6 +34,7 @@ material weight corresponds to the human effort and therefore potential of harm 
 
 For each raw material (iron, copper, silver, ...), we collect data about world production share of different countries.
 So, in effect, we assume that for example copper in one component in your product is a mix of all copper sources in the world. 
+Initially, we focus on collecting data about metals.
 
 <h3>Countries show different risks concerning Social Impacts</h3>
 
@@ -39,9 +45,154 @@ indication how likely it is that human rights were violated during the productio
     We distinguish between X different impact categories and collect data for each. The impact categories are described in more detail here.
 -->
 
-<!--
-<h2>Risk Calculation</h2>
-<h2>Impact Categories</h2>
+<h2 id="calculation">Calculation of Activity Values, Risks and Hotspots</h2>
 
-<h2>Future Developments</h2>
--->
+<h3>Activity Value</h3>
+
+Based on our basic concepts and assumptions explained above, we calculate an activity value (share of total product weight) that can be 
+associated to each component, material and country. In particular, this means that
+<ul>
+<li>
+An activity value of 10% for a component means that this component contributes
+10% to the total weight of a product.
+</li>
+<li>
+An activity value of 10% for a material means that this material contributes 10% to the total product weight
+(it may be part of various different components in the product).
+</li>
+<li>
+An activity value of 10% for a country means, that the raw materials
+produced in this country contribute 10% to the total product weight (different raw materials may be produced in this country).
+</li>
+</ul>
+
+<h3>Risk Value</h3>
+
+<!-- TODO: add examples-->
+For each social indicator, the values are sorted and the highest 25% of values are interpreted as "High Risk", the lowest 25% of values as "Low Risk",
+and everything in between as "Medium Risk" (depending on the indicator interpretation, this may also be the other way round, with lowest values as "High Risk",
+and highest values as "Low Risk"). Initially these risk qualifications are only connected to countries, but via our assumed distribution
+of material production and component composition, they can be associated to materials and components as well. So, a component that is partly
+made of a material that is to a certain percentage produced in a "High Risk"-country for a specific indicator, is seen as "High Risk"-component.
+
+<h3>Hotspots</h3>
+
+Hotspots are those countries, components and materials that show the highest activity and highest risks. For each component, we highlight
+the two components that show high risk and have the highest activity as hotspots. If no components show high risk, we highlight the two medium risk
+components with highest activity etc. The same procedure applies for material and country hotspots.
+
+<h2 id="impact-categories">Impact Categories</h2>
+
+We follow the Social Life Cycle Assessment (S-LCA) <a href="https://www.lifecycleinitiative.org/wp-content/uploads/2012/12/2009%20-%20Guidelines%20for%20sLCA%20-%20EN.pdf">guidelines</a> and 
+<a href="https://www.lifecycleinitiative.org/wp-content/uploads/2013/11/S-LCA_methodological_sheets_11.11.13.pdf">methodological sheets</a> for identifying potential social impact categories. Currently we
+focus on workers as stakeholder group. In particular, we collect data for the impact categories <b>Freedom of Association and Collective Bargaining</b>,
+<b>Child Labor</b>, <b>Fair Salary</b>, <b>Hours of Work</b>, <b>Forced Labor</b>, <b>Equal Opportunities / Discrimination</b>,
+<b>Health and Safety</b>, <b>Social Benefit / Social Security</b>. 
+Initially, we have defined and collected data for one indicator per impact category.
+In the following, we cite the definition for each impact category from the S-LCA methodological sheets, as these 
+form the foundation for our understanding and data collection of "Fairness". For more details and explanations,
+please refer to the methodological sheets.
+
+<h3>Freedom of Association and Collective Bargaining</h3>
+<p>
+All workers and employers have the right to establish and to join organizations of their choice, without prior authorization, to promote and defend their respective interests, and to negotiate collectively with other parties. They should be able to do this freely, without interference by other parties or the state, and should not be discriminated as a result of union membership.
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Share of employees covered by one or more collective agreement (in percent), latest year)" as provided by ILOSTAT in the infographic under https://ilostat.ilo.org/topics/collective-bargaining/ (accessed 10 2019).
+The individual values per country stem from different years, the oldest from 2008.
+We used the list as is, only removing unneeded columns "MEASURE" and "TIME_PERIOD".
+</p>
+
+<h3>Child Labor</h3>
+<p>
+The term “child labour” is often defined as work that deprives children of their childhood, their potential and their dignity, and that is harmful to physical and mental development. It refers to work that is:
+<ol>
+<li>Mentally, physically, socially or morally dangerous and harmful to children;</li>
+<li>Depriving them of the opportunity to attend school;</li>
+<li>Obliging them to leave school prematurely; or</li>
+<li>Requiring them to attempt to combine school attendance with excessively long and heavy work.</li>
+</ol>
+In its most extreme forms, child labour involves children being enslaved, separated from their families, exposed to serious hazards and illnesses and/or left to fend for themselves on the streets of large cities –   often at a very early age.
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Share of children engaged in economic activity and household chores (in percent), latest year" as provided by ILOSTAT in the infographic in https://ilostat.ilo.org/topics/child-labour/ (accessed 10 2019).
+The individual values per country stem from different years, the oldest from 2010. Some values are given for ages 5 to 17, others for ages 5 to 14.
+The provided list distinguishes between values for female, male and total. We only used the values for total.
+</p>
+<h3>Fair Salary</h3>
+<p>
+Fair wage means a wage fairly and reasonably commensurate with the value of a particular service or class of service rendered, and, in establishing a minimum fair wage for such service or class of service. 
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Share of employment by economic class (in percent), ILO modelled estimates for 2018, with lowest economic class based on the World Bank's international poverty line of $1.90 a day (using 2011 PPPs)", as provided by ILOSTAT in the infographic under https://ilostat.ilo.org/topics/working-poor/ (accessed 10 2019).
+We only used the values for "Extremely poor".
+</p>
+<h3>Hours of Work</h3>
+<p>
+The hours of work comply with applicable laws and industry standards. Workers are not on a regular basis required to work in excess of 48 hours per week and have at least one day off for every 7-day period. Overtime is voluntary, does not exceed 12 hours per week, is not demanded on a regular basis and is compensated at a premium rate. The needs and expectations of the workers are taken into account in the organisation of working hours. There are also higher restrictions if the hours of work are made during the night. 
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Share of employed persons working 40 or more hours per week, latest year", as provided by ILOSTAT in the infographic under https://ilostat.ilo.org/topics/working-time/ (accessed 10 2019).
+The individual values per country stem from different years, the oldest from 2015.
+We only used the values for "49 or more hours per week" and dropped "40 to 48 hours per week".
+</p>
+<h3>Forced Labor</h3>
+<p>
+Forced or compulsory labour is any work or service that is exacted from any person under the menace of any penalty, and for which that person has not offered himself or herself voluntarily. Providing wages or other compensation to a worker does not necessarily indicate that the labour is not forced or compulsory. By right, labour should be offered voluntary and workers should be free to leave the employment at any time in accordance with established rules.
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is “prevalence of forced labour” as assessed by the ILO.
+Data is taken from the ILO report Global estimates of modern slavery: forced labour and forced marriage, page 19, table 2.
+Data are reported on the level of world regions. We map the data to individual countries.
+</p>
+<h3>Equal Opportunities / Discrimination</h3>
+<p>
+Everybody deserves a "fair chance". It doesn't matter what sex, race or age you are, if you have a disability, your marital status, whether you are pregnant, your family status or your family responsibilities, the religious or political beliefs you might hold and your sexual orientation. Everybody has the right to be treated fairly and access to equal opportunities.Equal opportunity or the principle of non-discrimination emphasizes that opportunities in education, employment, advancement, benefits and resource distribution, and other areas should be freely available to all citizens irrespective of their age, race, sex, religion, political association, ethnic origin, or any other individual or group characteristic unrelated to ability, performance, and qualification.
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Proportion of women in managerial positions (%)" as provided by ILOSTAT under https://ilostat.ilo.org/data/ (5.5.2 Women in management, Last update 30Sep19).
+The Excel file provides multiple entries for many countries with varying source type and time. We only used the latest available value per country for "Total management" (dropping "senior and middle management column).
+</p>
+<h3>Health and Safety</h3>
+<p>
+Occupational health should aim at: the promotion and maintenance of the highest degree of physical, mental and social well-being of workers in all occupations; the prevention amongst workers  of  departures  from  health  caused  by  their  working  conditions;  the  protection  of  workers  in  their  employment  from  risks  resulting  from  factors  adverse  to  health;  the  placing  and maintenance of the worker in an occupational environment adapted to his physiological and psychological capabilities; and, to summarize, the adaptation of work to man and of each man to his job.
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Fatal occupational injuries per 100'000 workers" as provided by ILOSTAT under https://ilostat.ilo.org/data/ (accessed 10 2019).
+The Excel file provides multiple entries for Source and  Time per country. We selected the latest available value. We only used the values for "Total" and "Fatal" (dropping the distinction between male/female and non-fatal injuries).
+</p>
+<h3>Social Benefit / Social Security</h3>
+<p>
+Social benefits refer to non-monetary employment compensation. Four basic categories of Social Security benefits are often included and are paid based upon the record of worker’s earnings: Retirement, disability, dependents, and survivors benefits.
+</p>
+
+<p>
+<b>Indicator:</b>
+The indicator is "Share of population covered by at least one social protection benefit (in percent), latest year" as provided by ILOSTAT in the infographic under https://ilostat.ilo.org/topics/social-protection/ (accessed 10 2019).
+The individual values per country stem from different years, the oldest from 2016.
+</p>
+
+<h2 id="future-developments">Future Developments</h2>
+
+We consider the current state of Fairtronics to be in Prototype status. Possible future steps and extensions are:
+
+<ul>
+<li>Evaluation of current calculation according to S-LCA guidelines</li>
+<li>Extension of data base to cover more components and materials</li>
+<li>Extension of data base to cover further stakeholder groups (local community, consumer, ...) </li>
+<li>Extension of data base and calculation to further life cycle stages (assembly of components, assembly of final product, disposal, ...)</li>
+</ul>

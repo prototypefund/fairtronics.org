@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+.sticky {
+  position: sticky;
+  top: 60px; }
+
 .navbar a {
   color: white; }
 

@@ -3,11 +3,25 @@ layout: layout.liquid
 ---
   <div class="section">
 	<div class="container">
+	<div class="columns">
+		<div class="column is-one-quarter">
+		<aside class="menu sticky">
+ 	     <p class="menu-label">Outline</p>
+ 	     <ul class="menu-list">
+        {% for entry in outline%}
+        <li><a href="{{entry.url}}">{{entry.title}}</a></li>
+        {% endfor  %}
+		  </ul>
+		</aside>
+		</div>
+
+	<div class="column">
 		<h2 class="title is-2">{{ pageTitle }}</h2>
 		<p class="subtitle">{{ pageSubtext }}</p>
 			<div class="content">
 		  {{ content | safe }}
 			</div>
+	</div>
 	<!--
 	<div class="container">
         <div class="columns">
@@ -28,5 +42,6 @@ layout: layout.liquid
         </div>
         <div class="column">
 		-->
+  </div>
   </div>
 </div>
