@@ -24,7 +24,13 @@ root: ""
     <div class="navbar-menu">
       <div class="navbar-start">
       <a class="navbar-item" href="{{ '/browse' | url }}">Browse Reports</a>
+      {%
+        if mode.environment == "production"
+      %}
       <a class="navbar-item" href="http://app.fairtronics.org/#!/product/create">Create Report</a>
+      {% else %}
+      <a class="navbar-item" href="http://localhost:8080/#!/product/create">Create Report</a>
+      {% endif %}
       <a class="navbar-item" href="{{ '/how-it-works' | url }}">How it Works</a>
       <a class="navbar-item" href="{{ '/news' | url }}">News</a>
       </div>
@@ -32,7 +38,13 @@ root: ""
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
+            {%
+              if mode.environment == "production"
+            %}
           <a class="button is-dark" href="http://app.fairtronics.org">Demo App</a>
+            {% else %}
+          <a class="button is-dark" href="http://localhost:8080">Demo App</a>
+            {% endif %}
           <a class="button is-light" href="https://gitlab.com/fairloetet/">Gitlab</a>
         </div>
       </div>

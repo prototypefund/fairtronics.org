@@ -3,7 +3,45 @@ layout: page.liquid
 pageTitle: How it works
 pageSubtext: Explanation of our concepts and methods
 ---
+<p>
+By analyzing the raw materials contained within a device, we pinpoint the global hotspots where human rights violations are most likely to occur.
+Our goal is to provide a risk analysis that highlights the areas that should be focused for further activities, like further data collection, audits of suppliers, 
+or exploration of design alternatives. 
+In the following, we describe the basic concepts, assumptions, calculations and limitations behind Fairtronics.
+</p>
 
-By analyzing the raw materials contained within a device, we pinpoint the global hot spots where human rights violations are most likely to occur.
+<h2>Basic Concepts</h2>
 
-<i>More info upcomming</i>
+<h3>Electronics Products consist of Components</h3>
+
+When you create a social impact report with Fairtronics you can configure an electronics <b>product</b> from our <b>component</b> database,
+where we collect data about electronics components (like resistors, circuit boards, cables, ...). While we strive for completeness, especially in the beginning, 
+you might have to select a component that fits "good enough" to the one that is actually part of your product.
+
+<h3>Components are made from Raw Materials</h3>
+
+For each <b>component</b> in our database we collect data about its total weight and the share in weight of the raw <b>materials</b> it is made of.
+Again, while we strive for completeness, in the beginning we focus on metals. You should be aware that weight is only a proxy for what
+we are actually interested in: working hours or potential for human harm. As long as we are missing better data sources, we assume that 
+material weight corresponds to the human effort and therefore potential of harm that can be associated with this material.
+
+<h3>Raw Materials are produced in different Countries</h3>
+
+For each raw material (iron, copper, silver, ...), we collect data about world production share of different countries.
+So, in effect, we assume that for example copper in one component in your product is a mix of all copper sources in the world. 
+
+<h3>Countries show different risks concerning Social Impacts</h3>
+
+Global institutions like the International Labor Organization or the Unicef provide reports and estimates for human rights conditions
+in different countries. While one singular supplier might perform better (or worse), we assume that these estimates provide an
+indication how likely it is that human rights were violated during the production of materials in this country.
+<!--
+    We distinguish between X different impact categories and collect data for each. The impact categories are described in more detail here.
+-->
+
+<!--
+<h2>Risk Calculation</h2>
+<h2>Impact Categories</h2>
+
+<h2>Future Developments</h2>
+-->

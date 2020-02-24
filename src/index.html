@@ -44,8 +44,11 @@ subtitle: An easy-to-use tool for social risk analysis in electronics products
             <p class="is-size-4">You can use our app to examine social risks in your supply chain.</p>
             </div>
             <div class="section">
-                <a class="button is-large" href="http://localhost:8080/product/create">Create Report</a>
-
+                {% if mode.environment == "production" %}
+                <a class="button is-large" href="http://app.fairtronics.org/#!/product/create">Create Report</a>
+                {% else %}
+                <a class="button is-large" href="http://localhost:8080/#!/product/create">Create Report</a>
+                {% endif %}
             </div>
             </div>
             <div class="column">
@@ -128,7 +131,7 @@ subtitle: An easy-to-use tool for social risk analysis in electronics products
         <div class="section">
             <div class="level">
             <a class="level-left button is-primary is-large" href="mailto@info@fairtronics.org">Contact us</a>
-            <a class="level-right button is-primary is-large" href="mailto@info@fairtronics.org" disabled>Subscribe to Newsletter</a>
+            <a class="level-right button is-primary is-large" href="" disabled>Subscribe to Newsletter</a>
             </div>
         </div>
     </div>
