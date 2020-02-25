@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600&display=swap");
+.sticky {
+  position: sticky;
+  top: 60px; }
+
+.navbar a {
+  color: white; }
+
+.footer .container.level .level-item {
+  margin-left: 48px;
+  margin-right: 48px; }
+
+.has-board-background {
+  background-image: url("../assets/schalplan-illu-rechts.png"), url("../assets/schalplan-illu-links.png");
+  background-position: right bottom, top left;
+  background-repeat: no-repeat, no-repeat; }
+
 nav.navbar .navbar-item {
   font-size: 1.375rem;
   font-weight: normal; }
@@ -7128,14 +7144,14 @@ label.panel-block {
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 2.375rem;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 1.28px; }
 
 .title.is-1 {
   color: #4DB6AC;
   font-weight: normal;
   line-height: 4.6875rem;
   font-size: 3.4375rem;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 1.38px; }
 
 .big-source {
   font-size: 1.875rem;
@@ -7160,13 +7176,16 @@ label.panel-block {
   border-radius: 0.5rem;
   font-family: "Nunito", sans-serif;
   line-height: 2.5625rem;
-  letter-spacing: 0.1rem;
-  transition: transform 0.1s ease; }
+  letter-spacing: 1.28px;
+  transition: all 0.1s ease; }
 
 .button.animated:hover {
   transform: translate(10px, -10px);
   background-color: #4DB6AC;
   box-shadow: -10px 10px #9DC3C2; }
+
+.is-primary .button.animated:hover {
+  background-color: #4D7298; }
 
 body {
   line-height: 1.5; }
@@ -7174,9 +7193,6 @@ body {
 a {
   color: #4DB6AC;
   font-weight: bold; }
-
-.footer {
-  padding: 3rem 1.5rem 3rem; }
 
 .homepage {
   min-height: 100vh; }
@@ -7191,3 +7207,7 @@ div {
 .sticky {
   position: sticky;
   top: 30px; }
+
+.footer a {
+  color: grey;
+  font-weight: normal; }

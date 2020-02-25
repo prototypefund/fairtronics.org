@@ -81,8 +81,7 @@ $button-hover-border-color: $verdrigis;
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 2.375rem;
-  letter-spacing: 0.1rem;
-
+  letter-spacing: 1.28px;
 }
 
 .title.is-1 {
@@ -90,7 +89,7 @@ $button-hover-border-color: $verdrigis;
   font-weight: normal;
   line-height: 4.6875rem;
   font-size: 3.4375rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.38px;
 }
 
 .big-source {
@@ -121,14 +120,21 @@ $button-hover-border-color: $verdrigis;
   border-radius: 0.5rem;
   font-family: $nunito;
   line-height: 2.5625rem;
-  letter-spacing: 0.1rem;
-  transition: transform 0.1s ease;
+  letter-spacing: 1.28px;
+  transition: all 0.1s ease;
+
 }
 
 .button.animated:hover {
   transform: translate(10px,-10px);
   background-color: $verdrigis;
   box-shadow: -10px 10px $cambridge-blue;
+}
+
+.is-primary {
+    .button.animated:hover {
+      background-color: $blue-yonder;
+    }
 }
 
 body {
@@ -138,9 +144,6 @@ body {
 a {
     color: $verdrigis;
     font-weight: bold;
-}
-.footer {
-  padding: 3rem 1.5rem 3rem;
 }
 .homepage {
   min-height: 100vh;
@@ -158,5 +161,10 @@ div {
 .sticky {
   position: sticky;
   top: 30px;
+}
+
+.footer a {
+    color: grey;
+    font-weight: normal;
 }
 
