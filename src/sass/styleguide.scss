@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+// Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600&display=swap');
+
+// Colors
+$verdrigis: #4DB6AC;
+$blue-yonder: #4D7298;
+$tea-green: #D0EFB1;
+$cambridge-blue: #9DC3C2;
+$grey: #707070;
+$white: #FFFFFF;
+$primary: $verdrigis;
+$link: $cambridge-blue;
+
+$nunito: "Nunito", sans-serif ;
+$souce-sans: "Source Sans Pro", sans-serif;
+
+// Background
+$body-background-color: rgba($cambridge-blue, 0.1);
+
+// Navbar
+$navbar-background-color: $blue-yonder;
+$navbar-item-color: $white;
+$navbar-height: 6rem;
+nav.navbar .navbar-item {
+    font-size: 1.375rem;
+    font-weight: normal;
+}
+$navbar-item-img-max-height: 3.5rem;
+
+// General Typography
+$family-sans-serif: "Source Sans Pro", sans-serif;
+$title-family: "Nunito", sans-serif ;
+
+$body-size: 16px;
+
+// Forms
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Tables
+$table-head-cell-color: $white;
+$table-head-background-color: rgba($blue-yonder, 0.6);
+$table-color: $grey;
+
+// Button
+$button-color: $blue-yonder;
+$button-background-color: $tea-green;
+$button-border-color: $tea-green;
+$button-family: $family-sans-serif; // bold and upper case
+
+$button-hover-color: $white;
+$button-text-hover-background-color: $verdrigis;
+$button-hover-border-color: $verdrigis;
+
+.has-font-blue-yonder {
+    color: $blue-yonder !important;
+}
+.has-background-blue-yonder {
+    background-color: $blue-yonder;
+
+    h1.title.is-1 {
+        color: $tea-green;
+    }
+}
+
+@import "../../node_modules/bulma/bulma.sass";
+
+.title.is-4 {
+  color: $verdrigis;
+}
+
+.title.is-3 {
+  color: $grey;
+}
+
+.title.is-2 {
+  color: $blue-yonder;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.1rem;
+
+}
+
+.title.is-1 {
+  color: $verdrigis;
+  font-weight: normal;
+  line-height: 4.6875rem;
+  font-size: 3.4375rem;
+  letter-spacing: 0.1rem;
+}
+
+.big-source {
+  font-size: 1.875rem;
+  color: $grey;
+  font-family: $souce-sans;
+  line-height: 2.375rem;
+  letter-spacing: 0;
+}
+
+.small-source {
+  font-size: 1.375rem;
+  color: $grey;
+  font-family: $souce-sans;
+}
+
+.img-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-family: $nunito;
+  line-height: 2.5625rem;
+  letter-spacing: 0.1rem;
+  transition: transform 0.1s ease;
+}
+
+.button.animated:hover {
+  transform: translate(10px,-10px);
+  background-color: $verdrigis;
+  box-shadow: -10px 10px $cambridge-blue;
+}
+
+body {
+  line-height: 1.5;
+}
+
+a {
+    color: $verdrigis;
+    font-weight: bold;
+}
+.footer {
+  padding: 3rem 1.5rem 3rem;
+}
+.homepage {
+  min-height: 100vh;
+}
+
+.homepage img {
+  filter: grayscale(100%);
+}
+
+div {
+  font-size: 1.375rem;
+  color: $grey;
+}
+
+.sticky {
+  position: sticky;
+  top: 30px;
+}
+
