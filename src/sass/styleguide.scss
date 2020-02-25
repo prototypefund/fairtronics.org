@@ -68,6 +68,15 @@ $button-hover-border-color: $verdrigis;
 
 @import "../../node_modules/bulma/bulma.sass";
 
+.content h2 {
+  color: $blue-yonder;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: 1.28px;
+
+}
+
 .title.is-4 {
   color: $verdrigis;
 }
@@ -90,6 +99,13 @@ $button-hover-border-color: $verdrigis;
   line-height: 4.6875rem;
   font-size: 3.4375rem;
   letter-spacing: 1.38px;
+}
+.page-title {
+  color: $verdrigis;
+  font-weight: normal;
+  font-size: 3.4375rem;
+  letter-spacing: 1.38px;
+
 }
 
 .big-source {
@@ -160,7 +176,7 @@ div {
 
 .sticky {
   position: sticky;
-  top: 30px;
+  top: 9rem;
 }
 
 .footer a {

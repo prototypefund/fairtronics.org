@@ -7133,6 +7133,13 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.content h2 {
+  color: #4D7298;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: 1.28px; }
+
 .title.is-4 {
   color: #4DB6AC; }
 
@@ -7150,6 +7157,12 @@ label.panel-block {
   color: #4DB6AC;
   font-weight: normal;
   line-height: 4.6875rem;
+  font-size: 3.4375rem;
+  letter-spacing: 1.38px; }
+
+.page-title {
+  color: #4DB6AC;
+  font-weight: normal;
   font-size: 3.4375rem;
   letter-spacing: 1.38px; }
 
@@ -7206,7 +7219,7 @@ div {
 
 .sticky {
   position: sticky;
-  top: 30px; }
+  top: 9rem; }
 
 .footer a {
   color: grey;
