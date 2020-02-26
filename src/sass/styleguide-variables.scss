@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+// Import Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600&display=swap');
+
+
+// OWN VARIABLES
+$souce-sans: "Source Sans Pro", sans-serif;
+$nunito: "Nunito", sans-serif ;
+
+$verdrigis: #4DB6AC;
+$blue-yonder: #4D7298;
+$tea-green: #D0EFB1;
+$cambridge-blue: #9DC3C2;
+$grey: #707070;
+$white: #FFFFFF;
+
+// BULMA VARIABLES
+$primary: $verdrigis;
+$link: $cambridge-blue;
+
+// Background
+$body-background-color: rgba($cambridge-blue, 0.1);
+
+// Navbar
+$navbar-background-color: $blue-yonder;
+$navbar-item-color: $white;
+$navbar-height: 6rem;
+
+$navbar-item-img-max-height: 3.5rem;
+
+
+// General Typography
+$family-sans-serif: "Source Sans Pro", sans-serif;
+$title-family: "Nunito", sans-serif ;
+$body-size: 16px;
+
+// Forms
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Tables
+$table-head-cell-color: $white;
+$table-head-background-color: rgba($blue-yonder, 0.6);
+$table-color: $grey;
+
+// Button
+$button-color: $blue-yonder;
+$button-background-color: $tea-green;
+$button-border-color: $tea-green;
+$button-family: $family-sans-serif; // bold and upper case
+
+$button-hover-color: $white;
+$button-text-hover-background-color: $verdrigis;
+$button-hover-border-color: $verdrigis;
+
+
+@import "../../node_modules/bulma/bulma.sass";

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+// PRODUCT LIST
+.homepage {
+  min-height: 100vh;
+}
+
+.homepage img {
+  filter: grayscale(100%);
+}
+
+// INDEX
+.has-board-background {
+    background-image: url('../assets/schalplan-illu-rechts.png'), url('../assets/schalplan-illu-links.png');
+    background-position: right bottom, top left;
+    background-repeat: no-repeat, no-repeat;
+}

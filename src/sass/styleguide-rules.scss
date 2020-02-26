@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+// SPECIFIC RULES AFTER BULMA IMPORT
+
+// Helpers
+.has-font-blue-yonder {
+    color: $blue-yonder !important;
+}
+.has-background-blue-yonder {
+    background-color: $blue-yonder;
+
+    h1.title.is-1 {
+        color: $tea-green;
+    }
+}
+.sticky {
+  position: sticky;
+  top: 9rem;
+}
+
+// General
+body {
+  line-height: 1.5;
+}
+
+a {
+    color: $verdrigis;
+    font-weight: bold;
+}
+
+// Navbar
+.navbar a {
+    color: white;
+}
+nav.navbar .navbar-item {
+    font-size: 1.375rem;
+    font-weight: normal;
+}
+
+
+// Typography
+.content h2 {
+  color: $blue-yonder;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: 1.28px;
+
+}
+
+.title.is-4 {
+  color: $verdrigis;
+}
+
+.title.is-3 {
+  color: $grey;
+}
+
+.title.is-2 {
+  color: $blue-yonder;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: 1.28px;
+}
+
+.title.is-1 {
+  color: $verdrigis;
+  font-weight: normal;
+  line-height: 4.6875rem;
+  font-size: 3.4375rem;
+  letter-spacing: 1.38px;
+}
+.page-title {
+  color: $verdrigis;
+  font-weight: normal;
+  font-size: 3.4375rem;
+  letter-spacing: 1.38px;
+}
+
+.big-source {
+  font-size: 1.875rem;
+  color: $grey;
+  font-family: $souce-sans;
+  line-height: 2.375rem;
+  letter-spacing: 0;
+}
+
+.small-source {
+  font-size: 1.375rem;
+  color: $grey;
+  font-family: $souce-sans;
+}
+
+// Images
+
+.img-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Buttons
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-family: $nunito;
+  line-height: 2.5625rem;
+  letter-spacing: 1.28px;
+  transition: all 0.1s ease;
+}
+.button.animated:hover {
+  transform: translate(10px,-10px);
+  background-color: $verdrigis;
+  box-shadow: -10px 10px $cambridge-blue;
+}
+.is-primary {
+    .button.animated:hover {
+      background-color: $blue-yonder;
+    }
+}
+
+// Footer
+.footer a {
+    color: grey;
+    font-weight: normal;
+}
+.footer .container.level .level-item {
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+
+
+
+

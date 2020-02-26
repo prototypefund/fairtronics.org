@@ -1,23 +1,13 @@
 @charset "utf-8";
 
 
-.sticky {
-  position: sticky;
-  top: 60px;
-}
-.navbar a {
-    color: white;
-}
-.footer .container.level .level-item {
-    margin-left: 48px;
-    margin-right: 48px;
-}
+// IMPORT overwritten variables before Bulma
+@import "./styleguide-variables.scss";
 
-.has-board-background {
-    background-image: url('../assets/schalplan-illu-rechts.png'), url('../assets/schalplan-illu-links.png');
-    background-position: right bottom, top left;
-    background-repeat: no-repeat, no-repeat;
-}
+// IMPORT BULMA
+@import "../../node_modules/bulma/bulma.sass";
+// Specific rules after general Bulma rules
+@import "./styleguide-rules.scss";
 
-
-@import "./styleguide.scss";
+// Rules not shared accross app and homepage
+@import "./specific-rules.scss";
